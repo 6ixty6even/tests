@@ -19,8 +19,7 @@ public class TestAmazon {
     jse.executeScript("scrollBy(0,250)");
     driver.findElement(By.xpath("//img[@alt='Electronics']")).click();
     jse.executeScript("scrollBy(0,250)");
-    driver.findElement(By.xpath("//img[@alt='Apple EarPods with Lightning Connector - White']")).click();
-    //Assert.assertTrue(driver.findElement(By.xpath("//img[@alt='Apple EarPods with Lightning Connector - White']")).isDisplayed());
+    driver.findElement(By.xpath("//img[@alt='Apple EarPods with Lightning Connector - White']")).click();git g
 
 
     }
