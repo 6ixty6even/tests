@@ -19,10 +19,9 @@ public class TestBlizzard {
     @Test
     public void openBlizzard(){
         WebDriverManager.chromedriver().setup();
-
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.blizzard.com/en-gb/");
-        sleep(6);
+        sleep(10);
         WebElement searchBtn = driver.findElement(By.linkText("//div[@class='ProductTile']"));
         Actions actionProvider = new Actions(driver);
         // Perform double-click action on the element

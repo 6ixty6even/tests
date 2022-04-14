@@ -14,6 +14,7 @@ public class TestEatStreet {
 
     @Test
     public void testName() {
+
     }
 
     @Test
@@ -46,7 +47,7 @@ public class TestEatStreet {
         //a[@href="/norfolk-va/home"]
         //a[@href="/richmond-va/home"]
 
-        //label[contains(text(), 'Delivery')]
+        //label[contains(text(),'Delivery)]
         //label[contains(text(), 'Takeout')]
         //input[@id="input-food-search"][not(contains(text(), 'Takeout'))]
         //a[@id="find-restaurants"]
