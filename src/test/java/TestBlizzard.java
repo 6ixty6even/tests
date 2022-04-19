@@ -21,17 +21,10 @@ public class TestBlizzard {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.blizzard.com/en-gb/");
-        sleep(10);
-        WebElement searchBtn = driver.findElement(By.linkText("//div[@class='ProductTile']"));
-        Actions actionProvider = new Actions(driver);
-        // Perform double-click action on the element
-        actionProvider.doubleClick(searchBtn).build().perform();
+        sleep(2);
+        //WebElement searchBtn = driver.findElement(By.linkText("//div[@class='ProductTile']"));
         driver.findElements(By.xpath("//div[@class='ProductTile']")).get(1).click();
-//        driver.findElement(By.xpath("//a[@id='find-restaurants']")).click();
-//        driver.findElement(By.xpath("//a[@id='enter-address-btn']")).click();
-//        driver.findElement(By.xpath("//a[@id='find-restaurants']")).click();
-//        Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(), '')]")).isDisplayed());
-//        driver.quit();
+
     }
 
 
