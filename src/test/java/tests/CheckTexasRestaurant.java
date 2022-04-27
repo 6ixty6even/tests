@@ -25,6 +25,7 @@ public class CheckTexasRestaurant extends TestInit {
         sleep(2);
         homePage.getClickOnTexas().click();
         sleep(4);
+        sleep(1);
         sleep(2);
         Assert.assertTrue(homePage.texasRestauran().isDisplayed());
     }
