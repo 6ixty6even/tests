@@ -27,6 +27,17 @@ public class CheckTexasRestaurant extends TestInit {
         sleep(3);
         Assert.assertTrue(homePage.texasRestauran().isDisplayed());
     }
+
+    @Test
+    public void newnewTestTexasRestaurant() {
+        goToEatStreet();
+        HomePage homePage = new HomePage(driver);
+        homePage.getSearchField().sendKeys("Texas City, TX, USA");
+        sleep(2);
+        homePage.getClickOnTexas().click();
+        sleep(3);
+        Assert.assertTrue(homePage.texasRestauran().isDisplayed());
+    }
 }
 
 
