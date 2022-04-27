@@ -13,13 +13,7 @@ public class CheckTexasRestaurant extends TestInit {
         homePage.getSearchField().sendKeys("Texas City, TX, USA");
         sleep(2);
         homePage.getClickOnTexas().click();
-        sleep(4);
+        sleep(3);
         Assert.assertTrue(homePage.texasRestauran().isDisplayed());
     }
 }
-
-
-
-
-
-
