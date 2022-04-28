@@ -10,15 +10,15 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    public WebElement getSearchField() {
-        return driver.findElement(By.xpath("//input[@placeholder='Enter Your Address']"));
+    public WebElement getSearchInput() {
+        return getElementByXpath("//*[@id='input-food-search']");
     }
 
     public WebElement getClickOnTexas() {
         return driver.findElement(By.xpath("//li[@val='Texas City, TX, USA']"));
     }
 
-    public WebElement texasRestauran() {
+    public WebElement gettexasRestauran() {
         return driver.findElement(By.xpath("//a[@href='/houston-tx/restaurants/texas-pizza-houston']"));
     }
 }
