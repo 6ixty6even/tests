@@ -17,5 +17,3 @@ public class BasePage {
         return driver.findElement(By.xpath(locator));
     }
 }
-
-
